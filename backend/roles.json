@@ -1,0 +1,14 @@
+{
+    "Product Engineer": {
+        "questions": ["Can you talk about a project that you are most proud of?",
+                    "Tell me about a feature you built?",
+                    "How would you improve an existing product feature that you use daily?", 
+                    "What do you call a good API?"]
+    },
+    "Site Reliability Engineer": {
+        "questions": ["What is a load balancer?", 
+                    "How would you investigate a memory leak in a live system?", 
+                    "Your API is suddenly receiving huge number of requests and slowing down the system. How would you handle that?", 
+                    "Difference between vertical and horizontal scaling."]
+    }
+}
