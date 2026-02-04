@@ -11,7 +11,7 @@ def get_questions(role):
     if role in data:
         return data[role]["questions"]
     else:
-        return "Not found"
+        return None
 
 engine = pyttsx3.init()
 
@@ -32,10 +32,3 @@ def stt(audiofile):
 
 def get_answer(audio):
     return stt(audio)
-
-def calculate_grade(score):
-    total = (score//400)*100
-    return total
-
-def get_grade(score):
-    return calculate_grade(score)
