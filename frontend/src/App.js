@@ -5,6 +5,7 @@ import Landing from "./pages/Landing.js"
 function App() {
   return (
     <>
+    <Header/>
     <Landing/>
     </>
   );

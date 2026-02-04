@@ -5,7 +5,7 @@
   top: 2px;
   z-index: 1000;
   width: calc(100% - 110px);
-  height: 123px;
+  height: 100px;
   margin: 2px auto 0;
   padding: 0 40px;
   display: flex;
@@ -16,7 +16,7 @@
     rgba(121, 33, 0, 0.95) 0%,
     rgba(45, 12, 0, 0.95) 100%
   );
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(50px);
   border-bottom-left-radius: 33px;
   border-bottom-right-radius: 33px;
   box-shadow:
