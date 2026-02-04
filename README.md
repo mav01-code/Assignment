@@ -40,7 +40,6 @@ A full-stack interview platform that conducts interactive mock interviews with v
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/mav01-code/Assignment
-cd Assignment
 ```
 
 ### 2. Backend Setup
