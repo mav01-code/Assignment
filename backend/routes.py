@@ -25,20 +25,28 @@ def speak(q: str):
 @router.post("/audio")
 async def upload(file: UploadFile = File(...)):
     os.makedirs("audiofiles", exist_ok=True)
-    with open("audiofiles/answer.wav", "wb") as f:
+    file_path = "audiofiles/answer.webm"
+    with open(file_path, "wb") as f:
         shutil.copyfileobj(file.file, f)
     return {"Note": "Uploaded"}
 
-@router.post("transcribe")
+@router.post("/transcribe")
 def transcribe():
-    audio = "audiofiles/answer.wav"
+    audio_input = "audiofiles/answer.webm"
+    audio_output = "audiofiles/answer.wav"
 
-    if not os.path.exists(audio):
+    if not os.path.exists(audio_input):
         raise HTTPException(status_code = 400, detail = "Audio not found")
-    transcript = get_answer(audio)
-    with open("transcript/answers.txt", "a") as f:
-        f.write(transcript + "\n")
-    return {"transcript": transcript}
+    try:
+        transcript = get_answer(audio_input, audio_output)
+        os.makedirs("transcript", exist_ok=True)
+        with open("transcript/answers.txt", "a") as f:
+            f.write(transcript + "\n")
+        return {"transcript": transcript}
+    except RuntimeError as exc:
+        raise HTTPException(status_code=500, detail=str(exc))
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=f"Transcription error: {str(exc)}")
 
 @router.get("/score")
 def fetch_grade(score):

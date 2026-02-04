@@ -4,3 +4,4 @@ python-dotenv
 openai-whisper
 ffmpeg-python
 pyttsx3
+python-multipart

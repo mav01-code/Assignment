@@ -1,13 +1,18 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from "./components/Header.js"
 import Landing from "./pages/Landing.js"
+import Interview from "./pages/Interview.js"
+
 function App() {
   return (
-    <>
-    <Header/>
-    <Landing/>
-    </>
+    <Router>
+      <Header/>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/interview" element={<Interview />} />
+      </Routes>
+    </Router>
   );
 }
 
