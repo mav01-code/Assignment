@@ -67,6 +67,7 @@ The backend will run on `http://localhost:8000`
 cd frontend
 npm install
 npm start
+```
 
 The frontend will open at `http://localhost:3000`
 
