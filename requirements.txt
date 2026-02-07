@@ -1,6 +1,5 @@
 fastapi
 uvicorn
-python-dotenv
 openai-whisper
 ffmpeg-python
 pyttsx3

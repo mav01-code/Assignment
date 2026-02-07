@@ -1,14 +1,28 @@
 {
-    "Product Engineer": {
-        "questions": ["Can you talk about a project that you are most proud of?",
-                    "Tell me about a feature you built?",
-                    "How would you improve an existing product feature that you use daily?", 
-                    "What do you call a good API?"]
+    "RCA": {
+        "questions": ["Amazon has noticed a 20% drop in daily active users in India. How would you diagnose the root cause?", 
+                        "Swiggy orders have been dropped by 20% in Bangalore. How would you diagnose the issue?",
+                        "Ola's number of rides completed have been dropped by 15%. How would you diagnose the issue?", 
+                        "Urban company's service completion rate has been decreased by 18% in Bengaluru. Can you diagnose the issue?"],
+        "answers": ["The drop in daily active users is due to a recent update on Andriod platform that caused engagement issues.", 
+                        "The orders have been dropped by 20% in Bangalore due to price changes in the app. The delivery prices have been increased due to traffic and seasonal changes that caused an effect on number of orders.", 
+                        "The root cause for ride completion drop is due to recent payment system changes that caused often ride cancellations and incompleted rides.", 
+                        "The decrease in service completion is primarily due to expert inavailability in Bengaluru leading to service cancellations and inconvenience in bookings."]
     },
-    "Site Reliability Engineer": {
-        "questions": ["What is a load balancer?", 
-                    "How would you investigate a memory leak in a live system?", 
-                    "Your API is suddenly receiving huge number of requests and slowing down the system. How would you handle that?", 
-                    "Difference between vertical and horizontal scaling."]
+    "Metrics": {
+        "questions": [],
+        "answers": []
+    },
+    "Guesstimates": {
+        "questions": [],
+        "answers": []
+    },
+    "Product Improvement": {
+        "questions": [],
+        "answers": []
+    }, 
+    "Product Design": {
+        "questions": [],
+        "answers": []
     }
 }
