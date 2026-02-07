@@ -3,26 +3,28 @@
         "questions": ["Amazon has noticed a 20% drop in daily active users in India. How would you diagnose the root cause?", 
                         "Swiggy orders have been dropped by 20% in Bangalore. How would you diagnose the issue?",
                         "Ola's number of rides completed have been dropped by 15%. How would you diagnose the issue?", 
-                        "Urban company's service completion rate has been decreased by 18% in Bengaluru. Can you diagnose the issue?"],
+                        "Urban company's service completion rate has been decreased by 18% in Bengaluru. Can you diagnose the issue?",
+                        "UpGrad's certification completion rate has been decreased by 18% in Chennai. Can you diagnose the issue?"],
         "answers": ["The drop in daily active users is due to a recent update on Andriod platform that caused engagement issues.", 
                         "The orders have been dropped by 20% in Bangalore due to price changes in the app. The delivery prices have been increased due to traffic and seasonal changes that caused an effect on number of orders.", 
                         "The root cause for ride completion drop is due to recent payment system changes that caused often ride cancellations and incompleted rides.", 
-                        "The decrease in service completion is primarily due to expert inavailability in Bengaluru leading to service cancellations and inconvenience in bookings."]
+                        "The decrease in service completion is primarily due to expert inavailability in Bengaluru leading to service cancellations and inconvenience in bookings.",
+                        "The decrease in certification completion is primarily due to increased assignment difficulty that's required to acquire the certification."]
     },
     "Metrics": {
-        "questions": [],
-        "answers": []
+        "questions": ["", "", "", "", ""],
+        "answers": ["", "", "", "", ""]
     },
     "Guesstimates": {
-        "questions": [],
-        "answers": []
+        "questions": ["", "", "", "", ""],
+        "answers": ["", "", "", "", ""]
     },
     "Product Improvement": {
-        "questions": [],
-        "answers": []
+        "questions": ["", "", "", "", ""],
+        "answers": ["", "", "", "", ""]
     }, 
     "Product Design": {
-        "questions": [],
-        "answers": []
+        "questions": ["", "", "", "", ""],
+        "answers": ["", "", "", "", ""]
     }
 }
